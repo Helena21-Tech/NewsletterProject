@@ -1,0 +1,13 @@
+button {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+button:hover,
+button:active {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+}

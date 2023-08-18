@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+  padding: 1rem;
+}
+.mainImg {
+  width: 100%;
+}
+.main_content {
+  padding: 1rem 3rem;
+}
+.main_content h2 {
+  font-weight: 700;
+}
+@media only screen and (max-width: 1296px) {
+  .main {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .main {
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  .main_content {
+    width: 70%;
+    margin: 2rem auto;
+  }
+}
+@media only screen and (max-width: 672px) {
+  .main_content {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}

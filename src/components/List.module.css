@@ -1,0 +1,18 @@
+ul {
+  padding: 0rem;
+}
+.list {
+  display: flex;
+}
+.list img {
+  width: 05%;
+}
+.content {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 990px) {
+  .content {
+    font-size: 1.3rem;
+  }
+}
