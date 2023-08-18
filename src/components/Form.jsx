@@ -6,15 +6,19 @@ const Form = (props) => {
   const [email, setEmail] = useState("");
   const [emailIsValid, setEmailIsVaild] = useState(true);
 
+  const checkEmail = (email) => {
+    return setEmailIsVaild(() => {
+      return email.includes("@gmail.com");
+    });
+  };
   const emailValueHandler = (event) => {
     setEmail(event.target.value);
-    setEmailIsVaild(() => {
-      return event.target.value.includes("@gmail.com");
-    });
+    checkEmail(event.target.value);
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!emailIsValid) return;
+    checkEmail(email);
+    if (email.trim().length <= 0 || !emailIsValid) return;
     props.getEmail(email);
   };
   return (

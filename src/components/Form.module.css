@@ -29,6 +29,7 @@ input {
   border-color: hsl(234, 29%, 20%);
   border-top-color: hsl(231, 7%, 60%);
 }
+.invalid,
 .invalid:focus {
   outline: none;
   cursor: pointer;
